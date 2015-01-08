@@ -24,6 +24,8 @@ framework:
         handler_id:  ~
     fragments:       ~
     http_method_override: true
+    templating:
+        hinclude_default_template: AcmeDemoBundle::hinclude.html.twig
 
 # Twig Configuration
 twig:

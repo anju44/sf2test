@@ -1,0 +1,7 @@
+acme_article_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: AcmeArticleBundle:Default:index }
+
+article_show:
+    pattern: /article/{slug}
+    defaults: { _controller: AcmeArticleBundle:Article:show }
