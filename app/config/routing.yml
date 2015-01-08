@@ -7,5 +7,5 @@ app:
     type:     annotation
 
 hello:
-    pattern: /hello/{name}
-    defaults: { _controller: AcmeHelloBundle:Hello:index }
+    pattern: /hello/{first_name}/{last_name}
+    defaults: { _controller: AcmeHelloBundle:Hello:index, color: green }
