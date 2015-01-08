@@ -1,3 +1,7 @@
 acme_hello_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: AcmeHelloBundle:Hello:index }
+    path:     /hello/{first_name}/{last_name}
+    defaults: { _controller: AcmeHelloBundle:Hello:index,  color: green }
+
+# hello:
+#     pattern: /hello/{first_name}/{last_name}
+#     defaults: { _controller: AcmeHelloBundle:Hello:index, color: green }

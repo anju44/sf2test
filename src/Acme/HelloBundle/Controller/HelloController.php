@@ -16,13 +16,5 @@
     			array('first_name' => $first_name,
 				'last_name' => $last_name,
 				'color' => $color));		
-
-			// récupérer l'objet depuis la base de données
-			$product = 'truc';
-			if (!$product)
-			{
-				thorw $this->createNotFoundException('Le produit n\'existe pas');
-			}
-			return $this->render('truc');
 		}
 	}
