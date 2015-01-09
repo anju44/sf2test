@@ -15,15 +15,15 @@
         	));
     	}
 
-    	public function indexAction($slug)
+    	public function indexAction($page)
     	{
-    		// return $this->render(
-    		// 	'AcmeBlogBundle:Blog:index.html.twig',
-    		// 	array('page' => $page));	
+    		return $this->render(
+    			'AcmeBlogBundle:Blog:index.html.twig',
+    			array('page' => $page));	
 
-            $blogs = $slug;
+            // $blogs = $slug;
 
-            $this->render('AcmeBlogBundle:Blog:index.html.twig', array(
-                'blogs' => $blogs));
+            // $this->render('AcmeBlogBundle:Blog:index.html.twig', array(
+            //     'blogs' => $blogs));
     	}
 	}
