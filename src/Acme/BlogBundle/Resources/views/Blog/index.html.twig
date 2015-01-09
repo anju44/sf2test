@@ -1,1 +1,8 @@
-<h1>Ceci est la page {{ page }} !</h1>
+{% extends 'AcmeBlogBundle::layout.html.twig' %}
+
+{% block content %}
+    {% for entry in blog_entries %}
+        <h2>{{ entry.title }}</h2>
+        <p>{{ entry.body }}</p>
+    {% endfor %}
+{% endblock %}

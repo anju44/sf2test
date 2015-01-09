@@ -4,3 +4,11 @@
       {{ article.title }}
   </a>
 {% endfor %}
+
+  {{ dump(articles) }}
+
+{% for article in articles %}
+    <a href="/article/{{ article.slug }}">
+        {{ article.title }}
+    </a>
+{% endfor %}
