@@ -11,9 +11,9 @@ class DemoControllerTest extends WebTestCase
     public function testSecureSection()
     {
         // Stop here and mark this test as incomplete.
-        $this->markTestIncomplete(
-          'This test has not been implemented yet.'
-        );
+       $this->markTestSkipped(
+              'The MySQLi extension is not available.'
+            );
         $client = static::createClient();
 
         // goes to the secure page
