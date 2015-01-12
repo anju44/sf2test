@@ -36,95 +36,10 @@
 	"buffers":
 	[
 		{
-			"file": "src/Acme/ArticleBundle/Resources/views/Article/articleDetails.html.twig",
+			"file": "app/config/routing.yml",
 			"settings":
 			{
-				"buffer_size": 189,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Resources/views/base.html.twig",
-			"settings":
-			{
-				"buffer_size": 923,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/Acme/BlogBundle/Controller/BlogController.php",
-			"settings":
-			{
-				"buffer_size": 660,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/Acme/BlogBundle/Resources/views/Blog/layout.html.twig",
-			"settings":
-			{
-				"buffer_size": 134,
-				"line_ending": "Unix",
-				"name": "{% extends '::base.html.twig' %}"
-			}
-		},
-		{
-			"file": "app/config/config.yml",
-			"settings":
-			{
-				"buffer_size": 2342,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<?php\n	namespace Acme\\StoreBundle\\Entity;\n\n	use Doctrine\\ORM\\Mapping as ORM;\n	/**\n	 * @ORM\\Entity\n	 * @ORM\\Table(name=\"product\")\n	 */\n	class Product\n	{\n	    /**\n	     * @ORM\\Id\n	     * @ORM\\Column(type=\"integer\")\n	     * @ORM\\GeneratedValue(strategy=\"AUTO\")\n	     */\n	    protected $id;\n\n	    /**\n	     * @ORM\\Column(type=\"string\", length=100)\n	     */\n	    protected $name;\n\n	    /**\n	     * @ORM\\Column(type=\"decimal\", scale=2)\n	     */\n	    protected $price;\n\n	    /**\n	     * @ORM\\Column(type=\"text\")\n	     */\n	    protected $description;\n	\n        /**\n        * Get id\n        *\n        * @return integer \n        */\n        public function getId()\n        {\n            return $this->id;\n        }\n\n        /**\n         * Set name\n         *\n         * @param string $name\n         * @return Product\n         */\n        public function setName($name)\n        {\n            $this->name = $name;\n\n            return $this;\n        }\n\n        /**\n         * Get name\n         *\n         * @return string \n         */\n        public function getName()\n        {\n            return $this->name;\n        }\n\n        /**\n         * Set price\n         *\n         * @param string $price\n         * @return Product\n         */\n        public function setPrice($price)\n        {\n            $this->price = $price;\n\n            return $this;\n        }\n\n        /**\n         * Get price\n         *\n         * @return string \n         */\n        public function getPrice()\n        {\n            return $this->price;\n        }\n\n        /**\n         * Set description\n         *\n         * @param string $description\n         * @return Product\n         */\n        public function setDescription($description)\n        {\n            $this->description = $description;\n\n            return $this;\n        }\n\n        /**\n         * Get description\n         *\n         * @return string \n         */\n        public function getDescription()\n        {\n            return $this->description;\n        }\n}\n",
-			"file": "src/Acme/StoreBundle/Entity/Product.php",
-			"file_size": 1712,
-			"file_write_time": 130652685300000000,
-			"settings":
-			{
-				"buffer_size": 1984,
-				"line_ending": "Unix",
-				"name": "<?php"
-			}
-		},
-		{
-			"file": "src/Acme/ArticleBundle/Resources/views/Article/recentList.html.twig",
-			"settings":
-			{
-				"buffer_size": 363,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/Acme/BlogBundle/Resources/views/Blog/index.html.twig",
-			"settings":
-			{
-				"buffer_size": 204,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/Acme/ArticleBundle/Resources/views/Article/list.html.twig",
-			"settings":
-			{
-				"buffer_size": 330,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/Acme/ArticleBundle/Controller/ArticleController.php",
-			"settings":
-			{
-				"buffer_size": 523,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/Acme/ArticleBundle/Resources/config/routing.yml",
-			"settings":
-			{
-				"buffer_size": 219,
+				"buffer_size": 436,
 				"line_ending": "Unix"
 			}
 		}
@@ -132,9 +47,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 67.0,
 		"selected_items":
 		[
+			[
+				"syntax: tw",
+				"Set Syntax: HTML (Twig)"
+			]
 		],
 		"width": 392.0
 	},
@@ -157,40 +76,53 @@
 	"expanded_folders":
 	[
 		"/Users/julie/Workspace/sf2test",
-		"/Users/julie/Workspace/sf2test/app/Resources/AcmeBlogBundle",
-		"/Users/julie/Workspace/sf2test/app/Resources/AcmeBlogBundle/views",
-		"/Users/julie/Workspace/sf2test/src/Acme/ArticleBundle/Controller",
-		"/Users/julie/Workspace/sf2test/src/Acme/ArticleBundle/Resources",
-		"/Users/julie/Workspace/sf2test/src/Acme/ArticleBundle/Resources/config",
-		"/Users/julie/Workspace/sf2test/src/Acme/ArticleBundle/Resources/views",
-		"/Users/julie/Workspace/sf2test/src/Acme/ArticleBundle/Resources/views/Article",
-		"/Users/julie/Workspace/sf2test/src/Acme/BlogBundle",
-		"/Users/julie/Workspace/sf2test/src/Acme/BlogBundle/Controller",
-		"/Users/julie/Workspace/sf2test/src/Acme/BlogBundle/Resources/views",
-		"/Users/julie/Workspace/sf2test/src/Acme/BlogBundle/Resources/views/Blog",
-		"/Users/julie/Workspace/sf2test/src/Acme/BlogBundle/Resources/views/Default",
-		"/Users/julie/Workspace/sf2test/src/Acme/StoreBundle",
-		"/Users/julie/Workspace/sf2test/src/Acme/StoreBundle/Controller",
-		"/Users/julie/Workspace/sf2test/src/Acme/StoreBundle/Entity"
+		"/Users/julie/Workspace/sf2test/app",
+		"/Users/julie/Workspace/sf2test/app/config",
+		"/Users/julie/Workspace/sf2test/vendor"
 	],
 	"file_history":
 	[
-		"/Users/julie/Workspace/sf2test/app/config/parameters.yml",
-		"/Users/julie/Workspace/sf2test/app/Resources/views/base.html.twig",
-		"/Users/julie/Workspace/sf2test/app/config/config.yml",
-		"/Users/julie/Workspace/sf2test/src/Acme/ArticleBundle/Resources/views/Article/recentList.html.twig",
 		"/Users/julie/Workspace/sf2test/app/config/routing.yml",
+		"/Users/julie/Workspace/sf2test/src/Acme/StoreBundle/Resources/views/Store/index.html.twig",
+		"/Users/julie/Workspace/sf2test/app/AppKernel.php",
+		"/Users/julie/Workspace/sf2test/src/Acme/BlogBundle/Resources/config/routing.yml",
+		"/Users/julie/Workspace/sf2test/src/Acme/StoreBundle/Resources/config/routing.yml",
+		"/Users/julie/Workspace/sf2test/src/IndexBundle/Resources/views/Index/index.html.twig",
+		"/Users/julie/Workspace/sf2test/src/IndexBundle/Resources/config/routing.yml",
+		"/Users/julie/Workspace/sf2test/src/IndexBundle/Controller/IndexController.php",
+		"/Users/julie/Workspace/sf2test/src/IndexBundle/Resources/views/Index/anglais.html.twig",
+		"/Users/julie/Workspace/sf2test/src/Acme/ArticleBundle/Resources/views/Article/articleDetails.html.twig",
+		"/Users/julie/Workspace/sf2test/web/app.php",
+		"/Users/julie/Workspace/sf2test/src/IndexBundle/Resources/views/index.html.twig",
+		"/Users/julie/Workspace/sf2test/src/IndexBundle/Resources/views/Default/index.html.twig",
+		"/Users/julie/Workspace/sf2test/src/Acme/ArticleBundle/Controller/ArticleController.php",
+		"/Users/julie/Workspace/sf2test/app/Resources/views/base.html.twig",
+		"/Users/julie/Workspace/sf2test/app/Resources/views/default/index.html.twig",
+		"/Users/julie/Workspace/sf2test/src/Acme/ArticleBundle/Resources/config/routing.yml",
+		"/Users/julie/Workspace/sf2test/app/cache/dev/twig/6a/0e/4e3096f762a454209658eee524daf6002b24807296a20c0d967c4cc63e6e.php",
+		"/Users/julie/Workspace/sf2test/src/Acme/StoreBundle/Controller/DefaultController.php",
+		"/Users/julie/Workspace/sf2test/src/Acme/StoreBundle/Tests/Controller/DefaultControllerTest.php",
+		"/Users/julie/Workspace/sf2test/app/phpunit.xml.dist",
+		"/Users/julie/Workspace/sf2test/vendor/incenteev/composer-parameter-handler/Incenteev/ParameterHandler/composer.json",
 		"/Users/julie/Workspace/sf2test/src/Acme/BlogBundle/Controller/BlogController.php",
-		"/Users/julie/Workspace/sf2test/src/Acme/BlogBundle/Resources/views/Blog/show.html.twig",
+		"/Users/julie/Workspace/sf2test/src/Acme/StoreBundle/Entity/Product.php~",
+		"/Users/julie/Workspace/sf2test/src/Acme/StoreBundle/Entity/ProductRepository.php",
+		"/Users/julie/Workspace/sf2test/src/Acme/StoreBundle/Entity/Category.php",
+		"/Users/julie/Workspace/sf2test/src/Acme/StoreBundle/Entity/Product.php",
+		"/Users/julie/Workspace/sf2test/app/config/routing_dev.yml",
+		"/Users/julie/Workspace/sf2test/src/Acme/ArticleBundle/Resources/views/Article/list.html.twig",
 		"/Users/julie/Workspace/sf2test/src/Acme/BlogBundle/Resources/views/Blog/index.html.twig",
+		"/Users/julie/Workspace/sf2test/src/Acme/ArticleBundle/Resources/views/Article/recentList.html.twig",
+		"/Users/julie/Workspace/sf2test/src/Acme/BlogBundle/Resources/views/Blog/layout.html.twig",
+		"/Users/julie/Workspace/sf2test/app/config/config.yml",
+		"/Users/julie/Workspace/sf2test/app/config/parameters.yml",
+		"/Users/julie/Workspace/sf2test/src/Acme/BlogBundle/Resources/views/Blog/show.html.twig",
 		"/Users/julie/Workspace/sf2test/src/Acme/HelloBundle/Controller/HelloController.php",
 		"/Users/julie/Workspace/sf2test/src/Acme/HelloBundle/Resources/views/Hello/index.html.twig",
 		"/Users/julie/Workspace/sf2test/vendor/symfony/symfony/src/Symfony/Component/Debug/Exception/ContextErrorException.php",
-		"/Users/julie/Workspace/sf2test/app/AppKernel.php",
 		"/Users/julie/Workspace/sf2test/src/Acme/HelloBundle/Resources/config/routing.yml",
 		"/Users/julie/Workspace/sf2test/src/Acme/HelloBundle/Resources/views/Default/index.html.twig",
 		"/Users/julie/Workspace/sf2test/web/.htaccess",
-		"/Users/julie/Workspace/sf2test/web/app.php",
 		"/Users/julie/Workspace/sf2test/web/app_dev.php",
 		"/Users/julie/Workspace/sf2test/src/Acme/HelloBundle/AcmeHelloBundle.php",
 		"/Users/julie/Workspace/sf2test/src/Acme/TestBundle/AcmeTestBundle.php",
@@ -225,6 +157,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"IndexBundle",
+			"home",
+			"homepage",
+			"blabla",
+			"composer.json",
+			"blabla",
 			"my.cnf",
 			"generate",
 			"FileLoader",
@@ -248,16 +186,16 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/Acme/ArticleBundle/Resources/views/Article/articleDetails.html.twig",
-					"semi_transient": false,
+					"file": "app/config/routing.yml",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 189,
+						"buffer_size": 436,
 						"regions":
 						{
 						},
@@ -270,303 +208,15 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/Resources/views/base.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 923,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								903,
-								903
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/YAML/YAML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/Acme/BlogBundle/Controller/BlogController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 660,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								540,
-								540
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/Acme/BlogBundle/Resources/views/Blog/layout.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 134,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								134,
-								134
-							]
-						],
-						"settings":
-						{
-							"auto_name": "{% extends '::base.html.twig' %}",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/config/config.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2342,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2340,
-								2340
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 10.0,
-						"translation.y": 704.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/Acme/StoreBundle/Entity/Product.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1984,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								583,
-								583
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<?php",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 380.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/Acme/ArticleBundle/Resources/views/Article/recentList.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 363,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								215,
-								215
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "src/Acme/BlogBundle/Resources/views/Blog/index.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 204,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								204,
-								204
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "src/Acme/ArticleBundle/Resources/views/Article/list.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 330,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								330,
-								330
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "src/Acme/ArticleBundle/Controller/ArticleController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 523,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								166,
-								166
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "src/Acme/ArticleBundle/Resources/config/routing.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 219,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								218,
-								218
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
 					"type": "text"
 				}
 			]

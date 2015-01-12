@@ -1,3 +1,19 @@
 acme_store_homepage:
     path:     /hello/{name}
     defaults: { _controller: AcmeStoreBundle:Default:index }
+
+store:
+    path: /store
+    defaults: { _controller: AcmeStoreBundle:Default:create }
+
+store_update:
+    path: /store/{id}
+    defaults: { _controller: AcmeStoreBundle:Default:update, id: 1 }
+    requirements:
+        id: \d+
+
+store_show:
+    path: /store/{name}/{id}
+    defaults: { _controller: AcmeStoreBundle:Default:show, id: 1}
+    requirements:
+        id: \d+

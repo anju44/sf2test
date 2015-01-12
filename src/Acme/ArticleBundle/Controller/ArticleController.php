@@ -11,7 +11,7 @@ class ArticleController extends Controller
     public function recentArticlesAction($max = 3)
     {
         // un appel en base de données ou n'importe quoi qui retourne les "$max" plus récents articles
-        $articles = 'Blabla';
+        $articles = "Controller d'ArticleBundle";
 
         return $this->render('AcmeArticleBundle:Article:recentList.html.twig', array('articles' => $articles));
     }

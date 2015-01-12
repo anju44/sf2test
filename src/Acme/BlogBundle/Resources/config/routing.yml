@@ -1,3 +1,13 @@
 acme_blog_homepage:
     path:     /hello/{name}
     defaults: { _controller: AcmeBlogBundle:Default:index }
+
+blog:
+    path: /blog/{page}
+    defaults: { _controller: AcmeBlogBundle:Blog:index, page: 1 }
+    requirements:
+        page: \d+
+
+blog_show:
+    path: /blog/{slug}
+    defaults: { _controller: AcmeBlogBundle:Blog:show }
