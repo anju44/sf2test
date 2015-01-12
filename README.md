@@ -1,6 +1,9 @@
 Symfony Standard Edition
 ========================
 
+![Build test](https://api.travis-ci.org/anju44/sf2test.svg)
+
+
 Welcome to the Symfony Standard Edition - a fully-functional Symfony2
 application that you can use as the skeleton for your new applications.
 
