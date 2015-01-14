@@ -49,4 +49,26 @@
     			return $this->redirect($this->generateUrl($nextAction));
 	    	} 
 	    }
+
+	    public function contactAction(Request $request)
+	    {
+	    	$defaultData = array('message' => 'Type your message here');
+	    	$form = $this->createFormBuilder($defaultData)
+	    		->add('name', 'text')
+	    		->add('email', 'email')
+	    		->add('message', 'textarea')
+	    		->getForm();
+
+	    	$form->handleRequest($request);
+
+	    	if($form->isValid())
+	    	{
+	    		$data = $form->getData();
+	    	}
+
+	    	return $this->render('AcmeTaskBundle:Default:new.html.twig', array(
+	    		'form' => $form->createView(),
+	    		));
+    	
+	    }
 	}
