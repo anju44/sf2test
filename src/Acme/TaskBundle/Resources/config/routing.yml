@@ -1,7 +1,7 @@
-acme_task_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: AcmeTaskBundle:Default:index }
-
 task_homepage:
-    path: /task/
+    path: /task
+    defaults: { _controller: AcmeTaskBundle:Default:new }
+
+target_route:
+    path: /task/target_route
     defaults: { _controller: AcmeTaskBundle:Default:new }

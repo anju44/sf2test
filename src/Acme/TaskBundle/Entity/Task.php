@@ -8,6 +8,11 @@
 
         protected $dueDate;
 
+        /**
+         * @Assert\Type(type="Acme\TaskBundle\Entity\Category")
+         */
+        protected $category;
+
         public function getTask()
         {
             return $this->task;
@@ -21,8 +26,19 @@
         {
             return $this->dueDate;
         }
+        
         public function setDueDate(\DateTime $dueDate = null)
         {
             $this->dueDate = $dueDate;
+        }
+
+        public function getCategory()
+        {
+            return $this->category;
+        }
+
+        public function setCategory(Category $category = null)
+        {
+            $this->category = $category;
         }
     }
