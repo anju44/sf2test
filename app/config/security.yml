@@ -15,8 +15,8 @@ security:
         in_memory:
             memory:
                 users:
-                    user:  { password: userpass, roles: [ 'ROLE_USER' ] }
-                    admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
+                    julie:  { password: julie, roles: [ 'ROLE_USER' ] }
+                    admin: { password: admin, roles: [ 'ROLE_ADMIN' ] }
 
     # the main part of the security, where you can set up firewalls
     # for specific sections of your app
@@ -44,9 +44,52 @@ security:
             #anonymous: ~
             #http_basic:
             #    realm: "Secured Demo Area"
+        secured_area:
+            pattern: ^/
+            anonymous: ~
+            form_login:
+                 login_path: /login
+                 check_path: /login_check
+        main:
+            form_login:
+                # l'utilisateur est redirigé ici quand il/elle a besoin de se connecter
+                login_path:                     /login
+
+                # si défini à true, « forward » l'utilisateur vers le formulaire de
+                # login au lieu de le rediriger
+                use_forward:                    false
+
+                # soumet le formulaire de login vers cette URL
+                check_path:                     /login_check
+
+                # par défaut, le formulaire de login *doit* être un POST,
+                # et pas un GET
+                post_only:                      true
+
+                # options de redirection lorsque le login a réussi (vous
+                # pouvez en lire plus ci-dessous)
+                always_use_default_target_path: false
+                default_target_path:            /
+                target_path_parameter:          redirect_url #_target_path
+                use_referer:                    false
+
+                # options de redirection lorsque le login échoue (vous
+                # pouvez en lire plus ci-dessous)
+                failure_path:                   null
+                failure_forward:                false
+
+                # noms des champs pour le nom d'utilisateur et le mot
+                # de passe
+                username_parameter:             _username
+                password_parameter:             _password
+
+                # options du token csrf
+                csrf_parameter:                 _csrf_token
+                intention:                      authenticate
 
     # with these settings you can restrict or allow access for different parts
     # of your application based on roles, ip, host or methods
     # http://symfony.com/doc/current/book/security.html#security-book-access-control-matching-options
     access_control:
+        - { path: ^/admin, roles: ROLE_ADMIN }
         #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
