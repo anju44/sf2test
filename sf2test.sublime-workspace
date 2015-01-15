@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"Op",
+				"OptionsResolverInterface"
+			],
+			[
+				"Task",
+				"TaskBundle"
+			],
+			[
+				"Form",
+				"FormBuilderInterface"
+			],
+			[
 				"Article",
 				"ArticleBundle"
 			],
@@ -36,47 +48,45 @@
 	"buffers":
 	[
 		{
-			"contents": "<?php\n\n    namespace Acme\\TaskBundle\\Entity;\n\n    class Task\n    {\n        protected $task;\n\n        protected $dueDate;\n\n        public function getTask()\n        {\n            return $this->task;\n        }\n        public function setTask($task)\n        {\n            $this->task = $task;\n        }\n\n        public function getDueDate()\n        {\n            return $this->dueDate;\n        }\n        \n        public function setDueDate(\\DateTime $dueDate = null)\n        {\n            $this->dueDate = $dueDate;\n        }\n    }",
-			"file": "src/Acme/TaskBundle/Entity/Task.php",
-			"file_size": 519,
-			"file_write_time": 130655514860000000,
+			"file": "src/Acme/TaskBundle/Form/Type/CategoryType.php",
 			"settings":
 			{
-				"buffer_size": 528,
-				"line_ending": "Unix",
-				"name": "<?php"
+				"buffer_size": 594,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/config/config.yml",
+			"settings":
+			{
+				"buffer_size": 2431,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "src/Acme/TaskBundle/Controller/DefaultController.php",
 			"settings":
 			{
-				"buffer_size": 1630,
+				"buffer_size": 2173,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/Acme/TaskBundle/Resources/config/validation.yml",
+			"file": "app/config/security.yml",
 			"settings":
 			{
-				"buffer_size": 157,
-				"line_ending": "Unix",
-				"name": "Acme\\TaskBundle\\Entity\\Task:"
+				"buffer_size": 2234,
+				"line_ending": "Unix"
 			}
 		},
 		{
+			"contents": "{% form_theme form 'AcmeTaskBundle:Form:fields.html.twig' %}\n\n{# {% form_theme form with ['AcmeTaskBundle:Form:fields.html.twig', 'AcmeTaskBundle:Form:fields2.html.twig'] %} #}\n\n{{ form(form) }}",
 			"file": "src/Acme/TaskBundle/Resources/views/Default/new.html.twig",
+			"file_size": 200,
+			"file_write_time": 130657226650000000,
 			"settings":
 			{
-				"buffer_size": 16,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/Acme/TaskBundle/Resources/config/routing.yml",
-			"settings":
-			{
-				"buffer_size": 198,
+				"buffer_size": 194,
 				"line_ending": "Unix"
 			}
 		}
@@ -113,17 +123,22 @@
 	"expanded_folders":
 	[
 		"/Users/julie/Workspace/sf2test",
-		"/Users/julie/Workspace/sf2test/src",
-		"/Users/julie/Workspace/sf2test/src/Acme",
-		"/Users/julie/Workspace/sf2test/src/Acme/TaskBundle",
-		"/Users/julie/Workspace/sf2test/src/Acme/TaskBundle/Controller",
-		"/Users/julie/Workspace/sf2test/src/Acme/TaskBundle/Entity",
-		"/Users/julie/Workspace/sf2test/src/Acme/TaskBundle/Resources",
-		"/Users/julie/Workspace/sf2test/src/Acme/TaskBundle/Resources/config",
-		"/Users/julie/Workspace/sf2test/src/Acme/TaskBundle/Resources/views"
+		"/Users/julie/Workspace/sf2test/app",
+		"/Users/julie/Workspace/sf2test/app/config",
+		"/Users/julie/Workspace/sf2test/src/Acme/TaskBundle/Tests/Controller",
+		"/Users/julie/Workspace/sf2test/src/AppBundle/Controller"
 	],
 	"file_history":
 	[
+		"/Users/julie/Workspace/sf2test/src/Acme/TaskBundle/Controller/DefaultController.php",
+		"/Users/julie/Workspace/sf2test/src/Acme/TaskBundle/Entity/Category.php",
+		"/Users/julie/Workspace/sf2test/src/Acme/TaskBundle/Entity/Task.php",
+		"/Users/julie/Workspace/sf2test/src/Acme/TaskBundle/Form/Type/TaskType.php",
+		"/Users/julie/Workspace/sf2test/src/Acme/TaskBundle/Resources/views/Default/new.html.twig",
+		"/Users/julie/Workspace/sf2test/src/Acme/TaskBundle/Resources/views/Form/fields.html.twig",
+		"/Users/julie/Workspace/sf2test/src/Acme/TaskBundle/Resources/config/routing.yml",
+		"/Users/julie/Workspace/sf2test/src/Acme/TaskBundle/Resources/config/services.yml",
+		"/Users/julie/Workspace/sf2test/src/Acme/TaskBundle/Resources/config/validation.yml",
 		"/Users/julie/Workspace/sf2test/src/Acme/HelloBundle/Resources/views/Hello/index.html.twig",
 		"/Users/julie/Workspace/sf2test/src/Acme/HelloBundle/Controller/HelloController.php",
 		"/Users/julie/Workspace/sf2test/src/Acme/HelloBundle/Tests/Controller/HelloControllerTest.php",
@@ -235,30 +250,57 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/Acme/TaskBundle/Entity/Task.php",
+					"file": "src/Acme/TaskBundle/Form/Type/CategoryType.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 528,
+						"buffer_size": 594,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								401,
-								401
+								153,
+								153
 							]
 						],
 						"settings":
 						{
-							"auto_name": "<?php",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/config/config.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1033,
+								946
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -270,20 +312,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "src/Acme/TaskBundle/Controller/DefaultController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1630,
+						"buffer_size": 2173,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								933,
-								933
+								2158,
+								2158
 							]
 						],
 						"settings":
@@ -291,37 +333,8 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 44.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/Acme/TaskBundle/Resources/config/validation.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 157,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								157,
-								157
-							]
-						],
-						"settings":
-						{
-							"auto_name": "Acme\\TaskBundle\\Entity\\Task:",
-							"syntax": "Packages/YAML/YAML.tmLanguage"
-						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 380.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -329,19 +342,49 @@
 				},
 				{
 					"buffer": 3,
-					"file": "src/Acme/TaskBundle/Resources/views/Default/new.html.twig",
-					"semi_transient": false,
+					"file": "app/config/security.yml",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 16,
+						"buffer_size": 2234,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								16,
-								16
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/Acme/TaskBundle/Resources/views/Default/new.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 194,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								61
 							]
 						],
 						"settings":
@@ -353,34 +396,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/Acme/TaskBundle/Resources/config/routing.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 198,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								197,
-								197
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
 					"type": "text"
 				}
 			]
