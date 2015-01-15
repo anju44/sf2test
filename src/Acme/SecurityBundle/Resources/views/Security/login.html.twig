@@ -1,0 +1,19 @@
+{% if error %}
+	<div>{{ error.message }}</div>
+{% endif %}
+
+<form action="{{ path('login_check') }}" method="post">
+	<label for="username">Login : </label>
+	<input type="text" id="username" name="_username" value="{{ last_username }}" />
+	<br>
+	<label for="password">Mot de passe : </label>
+	<input type="password" id="password" name="_password" />
+	<br>
+	{#
+        Si vous voulez contrôler l'URL vers laquelle l'utilisateur est redirigé en cas de succès
+        (plus de détails ci-dessous) (normalement _target_path à la place de redirect_url #}
+        <input type="hidden" name="redirect_url" value="/account" />
+    
+
+    <button type="submit">Se connecter</button>
+</form>
