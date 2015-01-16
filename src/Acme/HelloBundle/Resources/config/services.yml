@@ -1,4 +1,11 @@
+parameters:
+    my_mailer.class: Acme\HelloBundle\Mailer 
+    my_mailer.transport: sendmail
+
 services:
 #    acme_hello.example:
 #        class: Acme\HelloBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]
+    my_mailer:
+        class: "%my_mailer.class%"
+        arguments: ["%my_mailer.transport%"]
