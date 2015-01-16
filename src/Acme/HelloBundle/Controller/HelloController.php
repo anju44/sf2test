@@ -22,4 +22,10 @@
 			//return new Response($t);
 		}
 
+		public function sendEmailAction()
+		{
+			$mailer = $this->get('my_mailer');
+			$mailer->send('ryan@foobar.net', ...);
+		}
+
 	}
