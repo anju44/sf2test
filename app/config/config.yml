@@ -83,5 +83,5 @@ services:
         tags:
             - { name: 'twig.extension' }
     my_mailer:
-        class: Acme\HelloBundle\Mailer
-        arguments: [sendmail]
+        class: "%my_mailer.class%"
+        arguments: ["%my_mailer.transport%"]
